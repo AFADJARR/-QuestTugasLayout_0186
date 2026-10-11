@@ -17,9 +17,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -119,3 +121,26 @@ fun ItemCard(
                 contentDescription = null,
                 modifier = Modifier.size(50.dp)
             )
+            Column(
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(horizontal = 10.dp)
+            ) {
+                Text(
+                    text = stringResource(id = namaRes),
+                    fontSize = 18.sp,
+                    fontFamily = FontFamily.Cursive,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.White
+                )
+                Text(
+                    text = stringResource(id = telpRes),
+                    fontSize = 13.sp,
+                    color = colorResource(id = R.color.text_yellow)
+                )
+                Text(
+                    text = stringResource(id = alamatRes),
+                    fontSize = 13.sp,
+                    color = Color.White
+                )
+            }

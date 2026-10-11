@@ -144,3 +144,11 @@ fun ItemCard(
                     color = Color.White
                 )
             }
+            Image(
+                painter = painterResource(id = logoRes),
+                contentDescription = null,
+                modifier = Modifier.size(50.dp)
+            )
+        }
+    }
+}

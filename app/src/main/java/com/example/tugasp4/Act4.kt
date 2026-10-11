@@ -1,8 +1,10 @@
 package com.example.tugasp4
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
@@ -33,3 +35,42 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
             fontSize = 14.sp
         )
         Spacer(modifier = Modifier.height(20.dp))
+
+        Column(
+            modifier = Modifier.fillMaxWidth(),
+            verticalArrangement = Arrangement.spacedBy(10.dp)
+        ) {
+            ItemCard(
+                namaRes = R.string.nama1,
+                telpRes = R.string.telp1,
+                alamatRes = R.string.alamat1,
+                colorRes = R.color.card_gray,
+                logoRes = R.drawable.logo
+            )
+            ItemCard(
+                namaRes = R.string.nama2,
+                telpRes = R.string.telp2,
+                alamatRes = R.string.alamat2,
+                colorRes = R.color.card_purple,
+                logoRes = R.drawable.logo
+            )
+            ItemCard(
+                namaRes = R.string.nama3,
+                telpRes = R.string.telp3,
+                alamatRes = R.string.alamat3,
+                colorRes = R.color.card_blue,
+                logoRes = R.drawable.logo
+            )
+            ItemCard(
+                namaRes = R.string.nama4,
+                telpRes = R.string.telp4,
+                alamatRes = R.string.alamat4,
+                colorRes = R.color.card_green,
+                logoRes = R.drawable.logo
+            )
+        }
+
+@Composable
+fun ItemCard(namaRes: nama_1, telpRes: telp_1, alamatRes: alamat_1, colorRes: Int, logoRes: linux) {
+    TODO("Not yet implemented")
+}

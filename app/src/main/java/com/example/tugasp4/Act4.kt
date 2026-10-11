@@ -1,6 +1,7 @@
 package com.example.tugasp4
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -69,8 +70,19 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                 logoRes = R.drawable.logo
             )
         }
+        Spacer(modifier = Modifier.weight(1f))
 
-@Composable
-fun ItemCard(namaRes: nama_1, telpRes: telp_1, alamatRes: alamat_1, colorRes: Int, logoRes: linux) {
-    TODO("Not yet implemented")
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(bottom = 20.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            Text(
+                text = stringResource(R.string.copy),
+                fontSize = 12.sp
+            )
+        }
+    }
 }
+

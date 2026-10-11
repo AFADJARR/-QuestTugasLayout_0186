@@ -86,3 +86,11 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
     }
 }
 
+@Composable
+fun ItemCard(
+    namaRes: Int,
+    telpRes: Int,
+    alamatRes: Int,
+    colorRes: Int,
+    logoRes: Int
+)

@@ -131,7 +131,7 @@ fun ItemCard(
                     fontSize = 18.sp,
                     fontFamily = FontFamily.Cursive,
                     fontWeight = FontWeight.Bold,
-                    color = Color.White
+                    color = colorResource(id = R.color.text_white)
                 )
                 Text(
                     text = stringResource(id = telpRes),
@@ -141,7 +141,7 @@ fun ItemCard(
                 Text(
                     text = stringResource(id = alamatRes),
                     fontSize = 13.sp,
-                    color = Color.White
+                    color = colorResource(id = R.color.text_white)
                 )
             }
             Image(
